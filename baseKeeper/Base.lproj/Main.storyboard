@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,29 +12,158 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="baseKeeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bat" translatesAutoresizingMaskIntoConstraints="NO" id="XeQ-F7-xtE">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Base Keeper" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7H-as-z0R">
+                                <rect key="frame" x="82" y="124" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cbs-BD-zpK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSG-r3-ngK" customClass="customButton" customModule="baseKeeper" customModuleProvider="target">
+                                <rect key="frame" x="82" y="592" width="250" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0EX-2O-izZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                <state key="normal" title="Play Ball">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="19e-Lk-lJc" kind="show" id="T61-CS-LcC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="XeQ-F7-xtE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="1AG-fM-rSa"/>
+                            <constraint firstItem="QSG-r3-ngK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6dn-Mm-9EW"/>
+                            <constraint firstItem="Y7H-as-z0R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="Gdr-VZ-1If"/>
                             <constraint firstItem="XeQ-F7-xtE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qxs-ap-xQH"/>
+                            <constraint firstItem="Y7H-as-z0R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VdL-44-aIA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QSG-r3-ngK" secondAttribute="bottom" constant="74" id="Wh1-QI-U09"/>
                             <constraint firstItem="XeQ-F7-xtE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="iux-Tn-gvJ"/>
+                            <constraint firstItem="Y7H-as-z0R" firstAttribute="width" secondItem="QSG-r3-ngK" secondAttribute="width" multiplier="0.688" id="oFf-OO-elt"/>
                             <constraint firstItem="XeQ-F7-xtE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z0b-Qv-oJH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="QGW-qM-0os"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="cPu-1p-sJJ">
+            <objects>
+                <viewController id="19e-Lk-lJc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rSU-7C-BHo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bat" translatesAutoresizingMaskIntoConstraints="NO" id="igw-B0-mpJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="7Np-ae-gEe">
+                                <rect key="frame" x="82" y="153" width="250" height="410"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFd-Sw-VcV" customClass="customButton" customModule="baseKeeper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bEY-dj-mbM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                        <state key="normal" title="Create a Team">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Or2-ye-mPi" customClass="customButton" customModule="baseKeeper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="90" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="3Yf-DG-3JL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                        <state key="normal" title="Edit Team">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jzC-XA-Pyr" customClass="customButton" customModule="baseKeeper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="180" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Oge-4x-qAh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                        <state key="normal" title="View Stats">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ez-YL-Cui" customClass="customButton" customModule="baseKeeper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="270" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="GiJ-RW-Nz3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                        <state key="normal" title="Enter Lineups">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HlH-Bu-I2T" customClass="customButton" customModule="baseKeeper" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="360" width="250" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="t7h-3T-yXN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="30"/>
+                                        <state key="normal" title="Score a Game">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="qwo-Sh-2zR"/>
+                                    <constraint firstAttribute="height" constant="410" id="zTo-os-ARC"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtK-cQ-bT4">
+                                <rect key="frame" x="20" y="20" width="81" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                <state key="normal" title="&lt;&lt;&lt;">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ZH6-0J-fha"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="igw-B0-mpJ" firstAttribute="bottom" secondItem="ZHe-po-Jun" secondAttribute="bottom" id="8fd-BD-wHm"/>
+                            <constraint firstItem="igw-B0-mpJ" firstAttribute="trailing" secondItem="ZHe-po-Jun" secondAttribute="trailing" id="BZL-6N-RKl"/>
+                            <constraint firstItem="ZHe-po-Jun" firstAttribute="bottom" secondItem="7Np-ae-gEe" secondAttribute="bottom" constant="153" id="EBG-20-TsT"/>
+                            <constraint firstItem="7Np-ae-gEe" firstAttribute="centerX" secondItem="rSU-7C-BHo" secondAttribute="centerX" id="Hmn-Px-TI6"/>
+                            <constraint firstItem="igw-B0-mpJ" firstAttribute="leading" secondItem="ZHe-po-Jun" secondAttribute="leading" id="Lrf-pZ-VpR"/>
+                            <constraint firstItem="igw-B0-mpJ" firstAttribute="top" secondItem="ZHe-po-Jun" secondAttribute="top" id="hy4-z3-9eo"/>
+                            <constraint firstItem="ZHe-po-Jun" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7Np-ae-gEe" secondAttribute="bottom" constant="20" id="i7g-ZD-18P"/>
+                            <constraint firstItem="7Np-ae-gEe" firstAttribute="top" secondItem="ZHe-po-Jun" secondAttribute="top" priority="750" constant="153" id="oCP-xt-wNg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZHe-po-Jun"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uFd-Gz-xZQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4w0-2x-S3C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902.89855072463774" y="138.58695652173915"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="bat" width="416.5" height="521"/>
+        <image name="bat" width="277.66665649414062" height="347.33334350585938"/>
     </resources>
 </document>
