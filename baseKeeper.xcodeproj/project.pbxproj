@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6948C9FA251829D900C9D282 /* LineupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948C9F9251829D900C9D282 /* LineupVC.swift */; };
 		698D2B8D2507D71A007EE001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D2B8C2507D71A007EE001 /* AppDelegate.swift */; };
 		698D2B8F2507D71A007EE001 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D2B8E2507D71A007EE001 /* SceneDelegate.swift */; };
 		698D2B912507D71A007EE001 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698D2B902507D71A007EE001 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6948C9F9251829D900C9D282 /* LineupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineupVC.swift; sourceTree = "<group>"; };
 		698D2B892507D71A007EE001 /* baseKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = baseKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		698D2B8C2507D71A007EE001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		698D2B8E2507D71A007EE001 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				698D2B902507D71A007EE001 /* ViewController.swift */,
+				6948C9F9251829D900C9D282 /* LineupVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -181,6 +184,7 @@
 				698D2B8F2507D71A007EE001 /* SceneDelegate.swift in Sources */,
 				698D2BA42507D746007EE001 /* game.swift in Sources */,
 				698D2BA62507D79A007EE001 /* customButton.swift in Sources */,
+				6948C9FA251829D900C9D282 /* LineupVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
